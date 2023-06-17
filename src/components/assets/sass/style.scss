@@ -1,0 +1,33 @@
+@import 'nav';
+@import "footer";
+@import "home";
+@import "about";
+@import "register";
+@import "shop";
+@import "blog";
+@import "cart";
+@import "search";
+@import "contact";
+@import "pay";
+.light {
+    --color: #131212;
+    --bg: #F6F7FB;
+    --nav: #fff;
+    --header: #e6e6e6;
+    --new: #F5F4F4;
+    --price: gray;
+    --white: #fff;
+    --close: #F6F7FB;
+    --line: #fff
+}
+.dark {
+    --color: #fff;
+    --bg: #000;
+    --nav: #252930;
+    --header: #2f353d;
+    --new: #252930;
+    --price: #fff;
+    --white: #fff;
+    --line: #000
+    --close: #fff;
+}

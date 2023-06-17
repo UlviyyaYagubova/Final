@@ -1,0 +1,259 @@
+.all-contact{
+    width: 100%;
+$color_1: #000;
+$color_2: #00B055;
+$color_3: #f44337;
+$color_4: #00b055;
+$color_5: #ff6347;
+$color_6: #3b5998;
+$color_7: #fff;
+$color_8: #F73983;
+$color_9: #00acee;
+$background-color_1: #F6F7FB;
+$background-color_2: #3b5998;
+$background-color_3: #F73983;
+$background-color_4: #00acee;
+	background-color: var(--new);
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+	font-size: 16px;
+}
+ul {
+	list-style: none;
+}
+input {
+	overflow: hidden;
+}
+.section-title {
+	position: relative;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: $font-family_1;
+	margin: 0 0 35px;
+}
+.sec-pad {
+	padding: 60px 0 0;
+	margin: 0px 0;
+	background-color: var(--nav);
+
+}
+.contact-sec {
+    display: flex;
+	align-items: center;
+	background-color: var(--nav);
+	h1{
+		color: var(--color);
+	}
+	.contact-ul {
+		li {
+			font-size: 20px;
+			margin: 10px 0;
+			font-family: $font-family_2;
+			word-wrap: break-word;
+			color: var(--color);
+			b {
+				&:hover {
+					color: $color_2;
+				}
+			}
+			.fa-location-dot {
+				color: $color_3;
+				border: 2px solid #08007a90;
+			}
+			.fa-phone {
+				color: $color_4;
+				border: 2px solid #08007a90;
+			}
+			.fa-envelope {
+				color: $color_5;
+				border: 2px solid #08007a90;
+			}
+		}
+		i {
+			font-size: 18px;
+			padding: 10px;
+			margin-right: 10px;
+			border-radius: 50%;
+		}
+		a{
+			color: var(--color);
+		}
+	}
+}
+.contact-ul {
+	b {
+		font-size: 20px;
+		margin: 10px 0;
+		font-family: $font-family_2;
+		word-wrap: break-word;
+	}
+}
+.contact-detail {
+	a {
+		color: $color_1;
+		text-decoration: none;
+	}
+	span {
+		width: 400px;
+		display: flex;
+		justify-content: center;
+		i{
+			color: var(--color);
+		}
+		a {
+			font-size: 20px;
+			padding: 6px 12px;
+			color: var(--color);
+			border-radius: 50%;
+			margin: 0px 5px;
+		}
+		.fb {
+			color: $color_6;
+			border: 2px solid #3b5998;
+			&:hover {
+				color: $color_7;
+				background-color: $background-color_2;
+			}
+		}
+		.insta {
+			color: $color_8;
+			border: 2px solid $color_8;
+			&:hover {
+				color: $color_7;
+				background-color: $background-color_3;
+			}
+		}
+		.twitter {
+			color: $color_9;
+			border: 2px solid $color_9;
+			&:hover {
+				color: $color_7;
+				background-color: $background-color_4;
+			}
+		}
+	}
+}
+form.contFrm {
+	max-width: 396px;
+	margin: auto;
+}
+.inptFld {
+	width: 100%;
+	height: 50px;
+	border: 0;
+	margin: 0 0 10px;
+	border-radius: 8px;
+	padding: 0 20px;
+	font-size: 16px;
+	color: $color_1;
+	&:focus {
+		outline-offset: -4px;
+		outline: 1px solid #f93;
+	}
+}
+.contFrm {
+	textarea {
+		height: 75px;
+		padding-top: 5px;
+	}
+}
+.inptBtn {
+	height: 50px;
+	border: 0;
+	background: #dc3545;
+	font-size: 20px;
+	color: white;
+	margin: auto;
+	letter-spacing: 1px;
+	cursor: pointer;
+	width: 100%;
+	max-width: 200px;
+	border-radius: 17px;
+	transition: 0.4s;
+	&:hover{
+		background-color: #3b5998;
+	}
+}
+@media (max-width: 991px) {
+	.sec-pad {
+		padding: 20px 0 0px;
+	}
+	.contact-sec {
+		.contact-ul {
+			li {
+				font-size: 18px;
+			}
+			i {
+				font-size: 14px;
+				padding: 6px;
+				margin-right: 6px;
+			}
+		}
+	}
+	.contact-ul {
+		b {
+			font-size: 18px;
+		}
+	}
+	.inptFld {
+		height: 40px;
+		margin: 0 0 10px;
+		padding: 0 14px;
+		font-size: 14px;
+	}
+}
+@media (max-width: 767px) {
+	.contact-detail {
+		span {
+			width: auto;
+			a {
+				font-size: 18px;
+				padding: 5px 10px;
+				color: $color_1;
+				border-radius: 50%;
+				margin: 0px 5px 20px;
+			}
+		}
+	}
+}
+@media (max-width: 575px) {
+	.section-title {
+		font-size: 26px;
+		font-weight: 500;
+	}
+	.contact-sec {
+		border-radius: 10% 10% 0% 0% / 5% 5% 0% 0%;
+		.contact-ul {
+			i {
+				border: none;
+			}
+		}
+	}
+	.inptFld {
+		height: 36px;
+		margin: 0 0 8px;
+		padding: 0 14px;
+		font-size: 14px;
+	}
+}
+@media (max-width: 480px) {
+	.contact-sec {
+		.contact-ul {
+			li {
+				font-size: 16px;
+			}
+		}
+	}
+	.contact-ul {
+		b {
+			font-size: 16px;
+		}
+	}
+}
+}
